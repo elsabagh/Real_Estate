@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Real Estate</string>
+    <string name="title_activity_login_fragment">Login_Fragment</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account_sign_in">don_t_have_an_account_sign_in</string>
+    <string name="login">Login</string>
+    <string name="label">name</string>
+    <string name="Setting">Setting</string>
+    <string name="Home">Home</string>
+    <string name="payment">payment</string>
+    <string name="already_have_an_account_login">already_have_an_account_login</string>
+</resources>
