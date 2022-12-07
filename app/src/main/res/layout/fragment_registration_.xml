@@ -8,18 +8,6 @@
 
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/image_1" />
-
-
-    <ImageView
         android:id="@+id/imageView4"
         android:layout_width="200dp"
         android:layout_height="200dp"
@@ -28,7 +16,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/image_1" />
+        app:srcCompat="@drawable/image_1" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_email_reg_f"
