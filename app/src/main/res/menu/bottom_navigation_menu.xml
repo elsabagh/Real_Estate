@@ -2,17 +2,17 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/page_1"
+        android:id="@+id/item_Setting"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_settings_24"
         android:title="@string/Setting"/>
     <item
-        android:id="@+id/page_2"
+        android:id="@+id/item_Home"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_home_24"
         android:title="@string/Home"/>
     <item
-        android:id="@+id/page_3"
+        android:id="@+id/item_payment"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_history_24"
         android:title="@string/payment"/>
