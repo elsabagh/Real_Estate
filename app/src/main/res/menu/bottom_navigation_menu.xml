@@ -11,10 +11,17 @@
         android:enabled="true"
         android:icon="@drawable/ic_baseline_home_24"
         android:title="@string/Home"/>
+
     <item
-        android:id="@+id/item_payment"
+        android:id="@+id/item_add_sell"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_history_24"
-        android:title="@string/payment"/>
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title="@string/Sell"/>
+
+<!--    <item-->
+<!--        android:id="@+id/item_payment"-->
+<!--        android:enabled="true"-->
+<!--        android:icon="@drawable/ic_baseline_history_24"-->
+<!--        android:title="@string/payment"/>-->
 
 </menu>

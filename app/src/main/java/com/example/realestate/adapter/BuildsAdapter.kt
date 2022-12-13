@@ -1,4 +1,4 @@
-package com.example.realestate
+package com.example.realestate.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.realestate.Data_builds
+import com.example.realestate.R
 
 class BuildsAdapter(private var buildsList:ArrayList<Data_builds>)
     :RecyclerView.Adapter<BuildsAdapter.BuildViewHolder>() {
@@ -21,7 +23,7 @@ class BuildsAdapter(private var buildsList:ArrayList<Data_builds>)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BuildViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.builds_item , parent , false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.builds_item, parent , false)
         return BuildViewHolder(view)
     }
 

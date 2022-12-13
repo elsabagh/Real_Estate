@@ -1,9 +1,10 @@
-package com.example.realestate
+package com.example.realestate.page_sartup
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.realestate.MainActivity
 import com.example.realestate.databinding.FragmentLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth

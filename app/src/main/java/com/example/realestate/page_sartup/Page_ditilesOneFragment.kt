@@ -1,14 +1,13 @@
-package com.example.realestate
+package com.example.realestate.page_sartup
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.realestate.databinding.FragmentPageDitilesOneBinding
-import com.example.realestate.databinding.FragmentPageDitilesTwoBinding
 
 class page_ditilesOneFragment : AppCompatActivity() {
 
-    lateinit var binding: FragmentPageDitilesOneBinding
+    private lateinit var binding: FragmentPageDitilesOneBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

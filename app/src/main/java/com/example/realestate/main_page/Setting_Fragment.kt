@@ -1,4 +1,4 @@
-package com.example.realestate
+package com.example.realestate.main_page
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

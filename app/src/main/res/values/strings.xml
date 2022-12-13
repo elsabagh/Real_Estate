@@ -20,4 +20,5 @@
     <string name="Home">Home</string>
     <string name="payment">payment</string>
     <string name="already_have_an_account_login">already_have_an_account_login</string>
+    <string name="Sell">Sell</string>
 </resources>

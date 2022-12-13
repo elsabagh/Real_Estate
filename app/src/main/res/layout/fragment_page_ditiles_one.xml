@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".page_ditilesOneFragment">
+    tools:context=".page_sartup.page_ditilesOneFragment">
 
 
     <TextView

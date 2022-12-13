@@ -14,7 +14,7 @@
         tools:targetApi="31">
 
         <activity
-            android:name=".Start_pageFragment"
+            android:name=".page_sartup.Start_pageFragment"
             android:exported="true"
             android:theme="@style/Theme.RealEstate.NoActionBar">
 
@@ -30,7 +30,7 @@
         </activity>
 
         <activity
-            android:name=".page_ditilesOneFragment"
+            android:name=".page_sartup.page_ditilesOneFragment"
             android:exported="false"
             android:theme="@style/Theme.RealEstate.NoActionBar">
             <meta-data
@@ -39,7 +39,7 @@
         </activity>
 
         <activity
-            android:name=".page_ditilesTwoFragment"
+            android:name=".page_sartup.page_ditilesTwoFragment"
             android:exported="false"
             android:theme="@style/Theme.RealEstate.NoActionBar">
             <meta-data
@@ -48,7 +48,7 @@
         </activity>
 
         <activity
-            android:name=".Registration_Fragment"
+            android:name=".page_sartup.Registration_Fragment"
             android:exported="false"
             android:theme="@style/Theme.RealEstate.NoActionBar">
             <meta-data
@@ -56,7 +56,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".Login_Fragment"
+            android:name=".page_sartup.Login_Fragment"
             android:exported="false"
             android:theme="@style/Theme.RealEstate.NoActionBar">
 

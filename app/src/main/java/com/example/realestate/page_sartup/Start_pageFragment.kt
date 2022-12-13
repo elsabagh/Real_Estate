@@ -1,10 +1,10 @@
-package com.example.realestate
+package com.example.realestate.page_sartup
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.realestate.MainActivity
 import com.example.realestate.databinding.FragmentStartPageBinding
-import com.example.realestate.databinding.FragmentPageDitilesOneBinding
 
 class Start_pageFragment : AppCompatActivity() {
 
