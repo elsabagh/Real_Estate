@@ -6,10 +6,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.realestate.Data_builds
+import com.example.realestate.data_items.Data_builds
 import com.example.realestate.R
 
-class BuildsAdapter(private var buildsList:ArrayList<Data_builds>)
+class BuildsAdapter(private var buildsList:List<Data_builds>)
     :RecyclerView.Adapter<BuildsAdapter.BuildViewHolder>() {
 
         class BuildViewHolder(itemsView: View) : RecyclerView.ViewHolder(itemsView){
@@ -17,13 +17,13 @@ class BuildsAdapter(private var buildsList:ArrayList<Data_builds>)
             val textView: TextView = itemsView.findViewById(R.id.textView3)
         }
 
-    fun setFilteredList(buildsList: ArrayList<Data_builds>){
+    fun setFilteredListD(buildsList: ArrayList<Data_builds>){
         this.buildsList = buildsList
         notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BuildViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.builds_item, parent , false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.child_item, parent , false)
         return BuildViewHolder(view)
     }
 

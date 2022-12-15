@@ -2,11 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/item_Setting"
-        android:enabled="true"
-        android:icon="@drawable/ic_baseline_settings_24"
-        android:title="@string/Setting"/>
-    <item
         android:id="@+id/item_Home"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_home_24"
@@ -17,6 +12,11 @@
         android:enabled="true"
         android:icon="@drawable/ic_baseline_add_24"
         android:title="@string/Sell"/>
+    <item
+        android:id="@+id/item_Setting"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/Setting"/>
 
 <!--    <item-->
 <!--        android:id="@+id/item_payment"-->

@@ -7,11 +7,13 @@ import android.widget.Toast
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.realestate.Data_builds
+import com.example.realestate.data_items.Data_builds
 import com.example.realestate.R
 import com.example.realestate.adapter.BuildsAdapter
+import com.example.realestate.adapter.ParentAdapter
+import com.example.realestate.data_items.Parent_items
 import com.example.realestate.databinding.FragmentHomeBinding
+import com.example.realestate.page_sartup.page_ditilesOneFragment
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -19,8 +21,11 @@ class Home_Fragment : Fragment() {
 
 lateinit var binding: FragmentHomeBinding
 
-    private lateinit var buildList: ArrayList<Data_builds>
-    private lateinit var buildsAdapter: BuildsAdapter
+//    private lateinit var buildList: ArrayList<Data_builds>
+//    private lateinit var buildsAdapterDA: BuildsAdapter
+
+    private lateinit var parentList: ArrayList<Parent_items>
+    private lateinit var buildsAdapter: ParentAdapter
 
 
 
@@ -38,13 +43,19 @@ lateinit var binding: FragmentHomeBinding
 
         binding.recBuilds.setHasFixedSize(true)
 
-        val layoutManager = GridLayoutManager(context,2)
-        binding.recBuilds.layoutManager = layoutManager
+//        val layoutManager = GridLayoutManager(context,2)
 
+        binding.recBuilds.layoutManager = LinearLayoutManager(context)
 
-        buildList = ArrayList()
+        parentList = ArrayList()
+//        buildList = ArrayList()
 
-        buildsAdapter = BuildsAdapter(buildList)
+//        buildsAdapter = ParentAdapter(parentList)
+
+//        buildsAdapterDA = BuildsAdapter(buildList)
+//        binding.recBuilds.adapter = buildsAdapterDA
+
+        buildsAdapter = ParentAdapter(parentList)
         binding.recBuilds.adapter = buildsAdapter
 
         addDataToList()
@@ -65,9 +76,9 @@ lateinit var binding: FragmentHomeBinding
     private fun filterList(query: String?) {
 
         if (query != null) {
-            val filteredList = ArrayList<Data_builds>()
-            for (i in buildList) {
-                if (i.name.lowercase(Locale.ROOT).contains(query)) {
+            val filteredList = ArrayList<Parent_items>()
+            for (i in parentList) {
+                if (i.title.lowercase(Locale.ROOT).contains(query)) {
                     filteredList.add(i)
                 }
             }
@@ -82,12 +93,34 @@ lateinit var binding: FragmentHomeBinding
 
     private fun addDataToList() {
 
-        buildList.add(Data_builds(R.drawable.build1, "Om Sree heights"))
-        buildList.add(Data_builds(R.drawable.build1, "Om2 Sree heights"))
-        buildList.add(Data_builds(R.drawable.build1, "Om3 Sree heights"))
-        buildList.add(Data_builds(R.drawable.build1, "Om4 Sree heights"))
-        buildList.add(Data_builds(R.drawable.build1, "Om5 Sree heights"))
+//        buildList.add(Data_builds(R.drawable.build1, "Om Sree heights"))
+//        buildList.add(Data_builds(R.drawable.build1, "Om2 Sree heights"))
+//        buildList.add(Data_builds(R.drawable.build1, "Om3 Sree heights"))
+//        buildList.add(Data_builds(R.drawable.build1, "Om4 Sree heights"))
+//        buildList.add(Data_builds(R.drawable.build1, "Om5 Sree heights"))
 
-        buildsAdapter.notifyDataSetChanged()
+        val childItems1 = ArrayList<Data_builds>()
+        childItems1.add(Data_builds(R.drawable.build1,"Om Sree heights"))
+        childItems1.add(Data_builds(R.drawable.build1,"Om2 Sree heights"))
+        childItems1.add(Data_builds(R.drawable.build1,"Om3 Sree heights"))
+        childItems1.add(Data_builds(R.drawable.build1,"Om4 Sree heights"))
+
+
+        parentList.add(Parent_items("fav", childItems1))
+
+
+        val childItems2 = ArrayList<Data_builds>()
+        childItems2.add(Data_builds(R.drawable.build1,"Om Sree heights"))
+        childItems2.add(Data_builds(R.drawable.build1,"Om21 Sree heights"))
+        childItems2.add(Data_builds(R.drawable.build1,"Om23 Sree heights"))
+        childItems2.add(Data_builds(R.drawable.build1,"Om24 Sree heights"))
+
+
+        parentList.add(Parent_items("loc", childItems2))
+
+
+
+
+//        buildsAdapter.notifyDataSetChanged()
     }
 }

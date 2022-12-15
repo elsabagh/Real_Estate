@@ -20,8 +20,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
+        initSubView()
         addNavigationListener()
 
     }
@@ -42,6 +41,17 @@ class MainActivity : AppCompatActivity() {
                 else -> false
             }
         }
+    }
+
+
+    private fun initSubView() {
+        addFragment(fragmentHome)
+    }
+
+    private fun addFragment(fragment: Fragment){
+        val transaction = supportFragmentManager.beginTransaction()
+        transaction.add(R.id.fragment_container, fragment)
+        transaction.commit()
     }
 
 
