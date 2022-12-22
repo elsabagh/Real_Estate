@@ -100,24 +100,42 @@ lateinit var binding: FragmentHomeBinding
 //        buildList.add(Data_builds(R.drawable.build1, "Om5 Sree heights"))
 
         val childItems1 = ArrayList<Data_builds>()
-        childItems1.add(Data_builds(R.drawable.build1,"Om Sree heights"))
+        childItems1.add(Data_builds(R.drawable.build1,"Om1 Sree heights"))
         childItems1.add(Data_builds(R.drawable.build1,"Om2 Sree heights"))
         childItems1.add(Data_builds(R.drawable.build1,"Om3 Sree heights"))
         childItems1.add(Data_builds(R.drawable.build1,"Om4 Sree heights"))
 
 
-        parentList.add(Parent_items("fav", childItems1))
+        parentList.add(Parent_items("Featured properties", childItems1))
 
 
         val childItems2 = ArrayList<Data_builds>()
-        childItems2.add(Data_builds(R.drawable.build1,"Om Sree heights"))
+        childItems2.add(Data_builds(R.drawable.build1,"Om20 Sree heights"))
         childItems2.add(Data_builds(R.drawable.build1,"Om21 Sree heights"))
         childItems2.add(Data_builds(R.drawable.build1,"Om23 Sree heights"))
         childItems2.add(Data_builds(R.drawable.build1,"Om24 Sree heights"))
 
 
-        parentList.add(Parent_items("loc", childItems2))
+        parentList.add(Parent_items("high level", childItems2))
 
+
+        val childItems3 = ArrayList<Data_builds>()
+        childItems3.add(Data_builds(R.drawable.build1,"Om30 Sree heights"))
+        childItems3.add(Data_builds(R.drawable.build1,"Om31 Sree heights"))
+        childItems3.add(Data_builds(R.drawable.build1,"Om33 Sree heights"))
+        childItems3.add(Data_builds(R.drawable.build1,"Om34 Sree heights"))
+
+
+        parentList.add(Parent_items("average level", childItems3))
+
+        val childItems4 = ArrayList<Data_builds>()
+        childItems4.add(Data_builds(R.drawable.build1,"Om40 Sree heights"))
+        childItems4.add(Data_builds(R.drawable.build1,"Om41 Sree heights"))
+        childItems4.add(Data_builds(R.drawable.build1,"Om43 Sree heights"))
+        childItems4.add(Data_builds(R.drawable.build1,"Om44 Sree heights"))
+
+
+        parentList.add(Parent_items("low level", childItems4))
 
 
 

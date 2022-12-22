@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.item_Home-> { replaceFragment(fragmentHome)
                     true
                 }
-                R.id.item_Setting ->{ replaceFragment(fragmentSetting)
+                R.id.item_Checklist ->{ replaceFragment(fragmentSetting)
                     true
                 }
                 R.id.item_add_sell->{ replaceFragment(fragmentSell)

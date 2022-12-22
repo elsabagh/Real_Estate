@@ -15,6 +15,7 @@ class BuildsAdapter(private var buildsList:List<Data_builds>)
         class BuildViewHolder(itemsView: View) : RecyclerView.ViewHolder(itemsView){
             val imageView : ImageView = itemsView.findViewById(R.id.image_build)
             val textView: TextView = itemsView.findViewById(R.id.textView3)
+
         }
 
     fun setFilteredListD(buildsList: ArrayList<Data_builds>){

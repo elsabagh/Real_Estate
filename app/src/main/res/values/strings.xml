@@ -16,9 +16,10 @@
     <string name="don_t_have_an_account_sign_in">don_t_have_an_account_sign_in</string>
     <string name="login">Login</string>
     <string name="label">name</string>
-    <string name="Setting">Setting</string>
+    <string name="checklist">menu</string>
     <string name="Home">Home</string>
     <string name="payment">payment</string>
     <string name="already_have_an_account_login">already_have_an_account_login</string>
     <string name="Sell">Sell</string>
+    <string name="title_activity_details_page">Details_Page</string>
 </resources>

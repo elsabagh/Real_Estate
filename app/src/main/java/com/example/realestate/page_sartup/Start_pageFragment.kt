@@ -25,7 +25,7 @@ class Start_pageFragment : AppCompatActivity() {
     }
 
     private fun click_Start() {
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, page_ditilesOneFragment::class.java)
         startActivity(intent)
     }
 

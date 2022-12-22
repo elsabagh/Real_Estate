@@ -12,12 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RealEstate"
         tools:targetApi="31">
-
+        <activity
+            android:name=".Details_Page"
+            android:exported="false"
+            android:label="@string/title_activity_details_page"
+            android:theme="@style/Theme.RealEstate.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".page_sartup.Start_pageFragment"
             android:exported="true"
             android:theme="@style/Theme.RealEstate.NoActionBar">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +35,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".page_sartup.page_ditilesOneFragment"
             android:exported="false"
@@ -37,7 +43,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".page_sartup.page_ditilesTwoFragment"
             android:exported="false"
@@ -46,7 +51,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".page_sartup.Registration_Fragment"
             android:exported="false"
@@ -59,7 +63,6 @@
             android:name=".page_sartup.Login_Fragment"
             android:exported="false"
             android:theme="@style/Theme.RealEstate.NoActionBar">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
