@@ -103,6 +103,7 @@
         android:id="@+id/rec_builds"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginStart="8dp"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -112,7 +113,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
         app:layout_constraintVertical_bias="0.0"
         app:spanCount="2"
-        tools:listitem="@layout/builds_item" />
+        tools:listitem="@layout/child_item" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

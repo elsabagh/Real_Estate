@@ -14,7 +14,10 @@ class BuildsAdapter(private var buildsList:List<Data_builds>)
 
         class BuildViewHolder(itemsView: View) : RecyclerView.ViewHolder(itemsView){
             val imageView : ImageView = itemsView.findViewById(R.id.image_build)
-            val textView: TextView = itemsView.findViewById(R.id.textView3)
+            val textName: TextView = itemsView.findViewById(R.id.textView3)
+            val textTitle: TextView = itemsView.findViewById(R.id.textView5)
+            val textPrise: TextView = itemsView.findViewById(R.id.textView6)
+
 
         }
 
@@ -31,7 +34,10 @@ class BuildsAdapter(private var buildsList:List<Data_builds>)
     override fun onBindViewHolder(holder: BuildViewHolder, position: Int) {
         val build = buildsList[position]
         holder.imageView.setImageResource(build.image)
-        holder.textView.text = build.name
+        holder.textName.text = build.name
+        holder.textTitle.text = build.title
+        holder.textPrise.text = build.price
+
     }
 
     override fun getItemCount(): Int {

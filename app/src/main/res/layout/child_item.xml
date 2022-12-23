@@ -28,14 +28,15 @@
             android:layout_height="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/shadow_effict">
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="146dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="4dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 android:text="Om Sree heights"
                 android:textColor="@color/white"
                 android:textSize="14sp"
@@ -48,10 +49,10 @@
                 android:layout_width="155dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="4dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 android:text="by Om Sree builders &amp; Dev..."
                 android:textColor="@color/white"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 android:textStyle="normal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -61,7 +62,7 @@
                 android:layout_width="90dp"
                 android:layout_height="24dp"
                 android:layout_marginStart="4dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 android:text="₹ 80L - 1Cr"
                 android:textColor="@color/white"
                 android:textSize="15sp"

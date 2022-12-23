@@ -79,14 +79,14 @@ class Sell_Fragment : Fragment() {
 
     private fun addDataToList() {
 
-        buildList.add(Data_builds(R.drawable.build1, "Om Sree heights"))
-        buildList.add(Data_builds(R.drawable.build1, "Om2 Sree heights"))
-        buildList.add(Data_builds(R.drawable.build1, "Om3 Sree heights"))
-        buildList.add(Data_builds(R.drawable.build1, "Om4 Sree heights"))
-        buildList.add(Data_builds(R.drawable.build1, "Om5 Sree heights"))
-        buildList.add(Data_builds(R.drawable.build1, "Om6 Sree heights"))
-        buildList.add(Data_builds(R.drawable.build1, "Om7 Sree heights"))
-        buildList.add(Data_builds(R.drawable.build1, "Om8 Sree heights"))
-        buildList.add(Data_builds(R.drawable.build1, "Om9 Sree heights"))
+        buildList.add(Data_builds(R.drawable.build1,"Om home average", "by Om Sree builders &amp; Dev...", "58000$"))
+        buildList.add(Data_builds(R.drawable.h1,"dragon home heights", "by Om Sree builders &amp; Dev...", "120000$"))
+        buildList.add(Data_builds(R.drawable.h4,"flower home heights", "by Om Sree builders &amp; Dev...", "85000$"))
+        buildList.add(Data_builds(R.drawable.h5,"good home heights", "by Om Sree builders &amp; Dev...", "89000$"))
+        buildList.add(Data_builds(R.drawable.h4,"flower home heights", "by Om Sree builders &amp; Dev...", "85000$"))
+        buildList.add(Data_builds(R.drawable.m2,"hello home average", "by Om Sree builders &amp; Dev...", "50000$"))
+        buildList.add(Data_builds(R.drawable.build1,"ni home low", "by Om Sree builders &amp; Dev...", "22000$"))
+        buildList.add(Data_builds(R.drawable.m4,"mouse home average", "by Om Sree builders &amp; Dev...", "58000$"))
+        buildList.add(Data_builds(R.drawable.l4,"byy home low", "by Om Sree builders &amp; Dev...", "15000$"))
     }
 }
