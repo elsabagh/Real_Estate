@@ -14,14 +14,14 @@ class Details_Page : AppCompatActivity() {
         binding = ActivityDetailsPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val build = intent.getParcelableExtra<Data_builds>("build")
-        if (build != null){
-            val nameBuild = binding.textDetails
-            val imageBuild = binding.imageViewDetails
-
-            nameBuild.text = build.name
-            imageBuild.setImageResource(build.image)
-        }
+//        val build = intent.getParcelableExtra<Data_builds>("build")
+//        if (build != null){
+//            val nameBuild = binding.textDetails
+//            val imageBuild = binding.imageViewDetails
+//
+//            nameBuild.text = build.name
+//            imageBuild.setImageResource(build.image)
+//        }
 
     }
 
